@@ -1,6 +1,5 @@
 <script>
-	import Background from '$components/snow-bg.svelte';
-	import Image from '$components/image.svelte';
+	import Form from '$components/sponsorshipForm.svelte';
 </script>
 
 <svelte:head>
@@ -11,9 +10,8 @@
 	/>
 </svelte:head>
 
-<Background />
 <main>
-	<h1>Building page here</h1>
+	<Form />
 </main>
 
 <style lang="scss">
