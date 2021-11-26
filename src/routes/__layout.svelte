@@ -36,4 +36,7 @@
 	.ww {
 		color: #fff;
 	}
+	a {
+		text-decoration: none;
+	}
 </style>
