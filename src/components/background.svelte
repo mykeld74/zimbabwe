@@ -14,23 +14,6 @@
 			style="enable-background:new 0 0 500 500;"
 			xml:space="preserve"
 		>
-			<style type="text/css">
-				.st0 {
-					fill: #de2010;
-				}
-				.st1 {
-					fill: var(--yellow);
-				}
-				.st2 {
-					fill: var(--green);
-				}
-				.st3 {
-					fill: #ffffff;
-				}
-				.st4 {
-					fill: var(--yellow);
-				}
-			</style>
 			<g id="XMLID_55_">
 				<path
 					id="XMLID_57_"
@@ -534,5 +517,20 @@
 		width: 70%;
 		margin: 10px auto;
 		opacity: 0.4;
+	}
+	.st0 {
+		fill: #de2010;
+	}
+	.st1 {
+		fill: var(--yellow);
+	}
+	.st2 {
+		fill: var(--green);
+	}
+	.st3 {
+		fill: #ffffff;
+	}
+	.st4 {
+		fill: var(--yellow);
 	}
 </style>

@@ -1,11 +1,9 @@
 <script>
-	import Children from '$data/zimkids.json';
-
-	const Kids = Children.child;
 	let fields = { firstName: '', lastName: '', email: '', phone: '', sponsoredChild: 'Select One:' };
 	let errors = { firstName: '', lastName: '', email: '', phone: '', sponsoredChild: '' };
 	let formIsValid = false;
 	let formIsSubmitted = false;
+	export let children;
 
 	const handleSubmit = (e) => {
 		formIsValid = true;
@@ -117,10 +115,8 @@
 		<label for="sponsoredChild">Child you would like to sponsor*:</label>
 		<select id="sponsoredChild" name="sponsoredChild" bind:value={fields.sponsoredChild} required>
 			<option disabled value="Select One:">Select One:</option>
-			{#each Kids as kid}
-				{#if !kid.sponsored}
-					<option value={kid.name}>{kid.name}</option>
-				{/if}
+			{#each children as { name }}
+				<option value={name}>{name}</option>
 			{/each}
 		</select>
 		<p class="error">{errors.sponsoredChild}</p>

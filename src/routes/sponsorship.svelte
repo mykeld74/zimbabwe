@@ -1,5 +1,26 @@
-<script>
+<script context="module">
+	import client from '$lib/client';
+
+	export async function load() {
+		const query = `*[_type == "child" && sponsored == false ] | order(age desc) {
+				name,
+				age,
+				gender,
+				sponsored
+		}`;
+
+		const kids = await client.fetch(query);
+
+		return {
+			props: { kids }
+		};
+	}
+
 	import Form from '$components/sponsorshipForm.svelte';
+</script>
+
+<script>
+	export let kids;
 </script>
 
 <svelte:head>
@@ -10,7 +31,7 @@
 	<div>
 		<h1>Sponsorship</h1>
 	</div>
-	<Form />
+	<Form children={kids} />
 
 	<div class="oneTimeDonation">
 		<p class="oneTime">Looking to make a one-time donation? Click the button below.</p>
