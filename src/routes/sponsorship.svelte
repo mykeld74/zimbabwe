@@ -2,7 +2,7 @@
 	import client from '$lib/client';
 
 	export async function load() {
-		const query = `*[_type == "child" && sponsored == false ] | order(age desc) {
+		const query = `*[_type == "child" && sponsored == false ] | order(name asc) {
 				name,
 				age,
 				gender,
