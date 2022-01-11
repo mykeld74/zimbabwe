@@ -31,7 +31,7 @@ export default {
 		{ name: 'Mercy Munere', sponsored: false },
 		{ name: 'Proffesor Moyo', sponsored: false },
 		{ name: 'Princess Sithole', sponsored: false },
-		{ name: 'Nokuthaba Nkiwane', sponsored: false },
+		{ name: 'Nokuthaba Nkiwane', sponsored: true },
 		{ name: 'Kimberly Nyathi', sponsored: false },
 		{ name: 'Nkosimaybongwe Ncube', sponsored: false },
 		{ name: 'Nolwazi Mbayiwa', sponsored: false },
