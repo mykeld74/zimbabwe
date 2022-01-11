@@ -5,7 +5,7 @@ export default {
 		{ name: 'Nodumo', sponsored: false },
 		{ name: 'Patience', sponsored: false },
 		{ name: 'Nicole', sponsored: true },
-		{ name: 'Nokuthula', sponsored: false },
+		{ name: 'Nokuthula', sponsored: true },
 		{ name: 'Nqobile', sponsored: true },
 		{ name: 'Lisa', sponsored: true },
 		{ name: 'Kimberly', sponsored: false },
