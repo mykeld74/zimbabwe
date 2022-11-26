@@ -52,7 +52,7 @@
 		e.preventDefault();
 		if (formIsValid) {
 			formIsSubmitted = true;
-			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			fetch(scriptURL, { redirect: 'follow', method: 'POST', body: new FormData(form) })
 				.then((response) => {
 					console.log('Success!', response),
 						(fields = {
